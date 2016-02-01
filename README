@@ -1,0 +1,19 @@
+SDS011 Sensor reader and reporting script
+=========================================
+
+usage: sdsensor.py [-h] [-d DEVICE] [-u URL]
+                   [-l {DEBUG,INFO,WARNING,ERROR,CRITICAL}] [-p] [-s SYSNODE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DEVICE, --device DEVICE
+                        device node
+  -u URL, --url URL     POST to this url. If empty, the script will only print
+                        out the values
+  -l {DEBUG,INFO,WARNING,ERROR,CRITICAL}, --loglevel {DEBUG,INFO,WARNING,ERROR,CRITICAL}
+                        Log level
+  -p, --powersaving     Powersaving
+  -s SYSNODE, --sysnode SYSNODE
+                        System node for the usb - for powersaving
+
+Requires python3, requests and pyserial
